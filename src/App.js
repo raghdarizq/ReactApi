@@ -1,6 +1,5 @@
 import Navbar from "./compoenents/Navbar";
-import ProductsList from "./compoenents/ProductsList";
-import Slider from "./compoenents/Slider";
+import HomePage from "./compoenents/HomePage";
 import { Routes, Route } from "react-router-dom";
 import About from "./compoenents/About";
 import MoreInfo from "./compoenents/MoreInfo";
@@ -12,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-          <Route path="/" element={<> <Slider /> <ProductsList /> </>}></Route>
+          <Route path="/" element={<> <HomePage/> </>}></Route>
           <Route path="about" element={<><About /></>}></Route>
           <Route path="product/:productId" element={<MoreInfo/>}></Route>
       </Routes>

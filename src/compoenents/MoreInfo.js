@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import "./Moreinfo.css"
+import "./Moreinfo.css";
 
 const MoreInfo = () => {
   let params = useParams();
@@ -10,11 +10,10 @@ const MoreInfo = () => {
   useEffect(() => {
     fetch(`${Api_url}/${params.productId}`)
       .then((res) => res.json())
-      .then((data) => setpro(data));
+      .then((pro) => setpro(pro));
   }, []);
   return (
     <>
-
       <div className="wrapper">
         <div className="product-img">
           <img src={pro.image} height="420" width="327" alt={pro.title} />
@@ -22,10 +21,8 @@ const MoreInfo = () => {
         <div className="product-info">
           <div className="product-text">
             <h1>{pro.title}</h1>
-            <h2>by studio and friends {params.productId}</h2>
-            <p>
-              {pro.description}
-            </p>
+            <h2>by studio and friends</h2>
+            <p>{pro.description}</p>
           </div>
           <div className="product-price-btn">
             <p>

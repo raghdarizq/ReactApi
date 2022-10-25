@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 
 const Productsditiles = (props) => {
+  const productId= props.id
   return (
     <>
       <div className="card">
@@ -9,9 +11,9 @@ const Productsditiles = (props) => {
           <p className="card-text">
             price is :<mark>{props.price}$</mark>
           </p>
-          <a  href="/#" className="btn btn-primary">
+          <Link  className="btn btn-primary " to={`/product/1`}>
             More Ditels
-          </a>
+          </Link>
         </div>
       </div>
     </>
