@@ -22,6 +22,7 @@ const ProductsList = () => {
                 title={products.title}
                 img={products.image}
                 price={products.price}
+                id={products.id}
                 />
               </div>
             );
