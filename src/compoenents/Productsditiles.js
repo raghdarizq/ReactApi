@@ -7,12 +7,13 @@ const Productsditiles = (props) => {
       <div className="card">
         <img src={props.img} className="card-img-top " alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
+          <h5 className="card-title">{props.title}
+          </h5>
           <p className="card-text">
             price is :<mark>{props.price}$</mark>
           </p>
-          <Link  className="btn btn-primary " to={`/product/1`}>
-            More Ditels
+          <Link  className="btn btn-primary " to={`/product/${productId}`}>
+            More Ditels <mark>{props.id}</mark>
           </Link>
         </div>
       </div>
