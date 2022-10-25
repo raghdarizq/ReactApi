@@ -10,10 +10,10 @@ const Category = () => {
   return (
     <>
       <div className="container">
-      {Categors.map((Cats)=>{
+      {/* {Categors.map((Cats)=>{
         return (<h1>sx</h1>)
 
-      })}
+      })} */}
 
       </div>
     </>
