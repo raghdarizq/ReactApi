@@ -29,7 +29,6 @@ const MoreInfo = () => {
               <span>{pro.price}</span>$
             </p>
             <button type="button">buy now</button>
-            
           </div>
         </div>
       </div>

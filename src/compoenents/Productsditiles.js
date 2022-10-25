@@ -13,7 +13,7 @@ const Productsditiles = (props) => {
             price is :<mark>{props.price}$</mark>
           </p>
           <Link  className="btn btn-primary " to={`/product/${productId}`}>
-            More Ditels <mark>{props.id}</mark>
+            More Ditels
           </Link>
         </div>
       </div>
